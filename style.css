@@ -1,0 +1,101 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover,
+.child-buttons button:hover  {
+    background-color: #1874CF;
+}
+
+.child-buttons .downloadButton:hover {
+    background-color: #272727;
+}
+
+.service-wrapper {
+    width: 45%;
+    margin: 60px auto 0;
+}
+
+#domainsInput {
+    padding: 15px;
+}
+
+.start-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.convert-button {
+    background-color: #2291FF;
+    border: unset;
+    padding: 15px;
+    border-radius: 45px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.child-buttons button {
+    background-color: #2291FF;
+    border: unset;
+    padding: 10px;
+    border-radius: 45px;
+    color: white;
+    font-size: 1rem;
+}
+
+.child-buttons .downloadButton {
+    background-color: #3D3D3D;
+}
+
+.count-devine {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.check-devine {
+    font-size: 1.2rem;
+}
+
+#splitBy,
+.check-devine {
+    cursor: pointer;
+}
+
+.child-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+#resultsContainer {
+    width: 100%;
+}
+
+.resultBlock {
+    display: flex;
+    gap: 20px;
+}
+
+.resultBlock textarea {
+    width: 50%;
+    height: 150px;
+    resize: none;
+    margin-bottom: 10px;
+    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.resultBlock button {
+    margin-top: 5px;
+}
+
+.divive-counter {
+    width: 10%;
+}
