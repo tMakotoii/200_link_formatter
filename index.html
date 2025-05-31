@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Конвертер доменов</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="service-wrapper">
-        <div class="start-service">
-            <textarea id="domainsInput" placeholder="Вставьте список URL, из которых нужно извлечь домены" rows="10" cols="50"></textarea><br>
-            <div class="start-button">
-                <div class="count-devine">
-                    <label for="splitBy" class="check-devine">Разделить по 200 доменов</label>
-                    <input type="checkbox" id="splitBy" name="splitBy"><br>
-                </div>
-                <button class="convert-button" onclick="normalizeAndExport()">Конвертировать</button>
+    <div class="container">
+        <h1>Конвертер доменов</h1>
+        <div class="input-section">
+            <textarea id="domainsInput" placeholder="Вставьте список URL, из которых нужно извлечь домены" rows="10"></textarea>
+            <div class="controls">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="splitBy">
+                    Разделить по <input type="number" id="count-devine" value="200" min="1"> доменов
+                </label>
+                <button id="convertBtn" class="btn">Конвертировать</button>
+                <button id="clearBtn" class="btn secondary">Очистить</button>
             </div>
         </div>
-        <div id="resultsContainer"></div>
+        <div id="resultsContainer" class="results"></div>
     </div>
     <script src="script.js"></script>
 </body>
