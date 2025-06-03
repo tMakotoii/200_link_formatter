@@ -113,9 +113,6 @@ function normalizeAndExport() {
                     navigator.clipboard.writeText(chunkText)
                     .then(() => {
                         button.classList.add('copied');
-                        setTimeout(() => {
-                        button.classList.remove('copied');
-                        }, 2000);
                     })
                     .catch(err => {
                         console.error('Ошибка копирования: ', err);
